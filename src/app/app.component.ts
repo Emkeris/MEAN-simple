@@ -13,3 +13,4 @@ export class AppComponent {
     this.storedPosts.push(post);
   }
 }
+
