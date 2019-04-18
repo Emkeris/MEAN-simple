@@ -1,5 +1,4 @@
-// tslint:disable-next-line:quotemark
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Post } from '../post.model';
@@ -23,8 +22,7 @@ export class PostListComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.postsService.getPosts();
-    this.postsSub = this.postsService.getPostUpdateListener()
-      .subscribe((posts: Post[]) => {
+    this.postsSub = this.postsService.getPostUpdateListener().subscribe((posts: Post[]) => {
         this.posts = posts;
       });
   }
